@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Annivory - 우리가 기록하는 새로운 기념일</title>
+
+<!--    <link rel="stylesheet" href="css/pastel_calender_main.css">-->
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header h1 {
+            color: #deaefc;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ffb6c1;
+            border-radius: 5px;
+        }
+        .calendar {
+            background: #ffeff1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .category {
+            background: #ffb6c1;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 180px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container">
+      <header>
+        <h1> 💕 Annivory 💕 </h1>
+        <input type="text" placeholder="검색...">
+      </header>
+
+      <section class="calender">
+        <h2> 📅 달력 </h2>
+        <p> 여기에 캘린더 UI가 들어갈 수 있도록 설정할 것 </p>
+      </section>
+      <section class="categories">
+        <div class="category">
+          <h3> 📖 일상 </h3>
+          <p> 소소한 하루의 기록 </p>
+        </div>
+        <div class="category">
+          <h3> ✈️ 여행 </h3>
+          <p> 같이 다녀온 여행 이야기 </p>
+        </div>
+        <div class="category">
+          <h3> 🎉 기념일 </h3>
+          <p> D-day, 나만의 특별한 날 기록 </p>
+        </div>
+        <div class="category">
+          <h3> ⭐ 즐겨찾기 </h3>
+          <p> 다시 보고싶은 글 </p>
+        </div>
+        <div class="category">
+          <h3> 💡 친구들의 기록 </h3>
+          <p> 내 블로그가 아닌 다른 친구들의 소식 알아보기 </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

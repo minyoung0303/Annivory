@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from annivory_app.views import hello, SampleAPI, serve_react
+from annivory_app.views import hello, SampleAPI, serve_react, ReactAppView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello),
     path('api/sample/', SampleAPI.as_view()),
     re_path(r'^.*', serve_react, name='serve_react'),
+    re_path(r'^.*$', ReactAppView.as_view(), name='react_app'),
 ]

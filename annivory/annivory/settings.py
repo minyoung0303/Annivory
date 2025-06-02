@@ -63,7 +63,7 @@ ROOT_URLCONF = 'annivory.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\choye\PycharmProjects\Annivory\frontend\build'],
+        'DIRS': [r'C:\Users\choye\PycharmProjects\Annivory\annivory_animate\dist'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
+    os.path.join(BASE_DIR, 'annivory_animate', 'dist', 'assets'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

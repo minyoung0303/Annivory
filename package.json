@@ -6,6 +6,9 @@
     "@fullcalendar/list": "^6.1.15",
     "@fullcalendar/react": "^6.1.15",
     "@fullcalendar/timegrid": "^6.1.15",
-    "axios": "^1.7.9"
+    "axios": "^1.7.9",
+    "django": "^99.99.99",
+    "python": "^0.0.4",
+    "python3": "^0.0.1"
   }
 }

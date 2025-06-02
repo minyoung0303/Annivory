@@ -6,6 +6,7 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+# /hello/ 주소 참고
 def hello(request):
     return HttpResponse("Hello, world. You're at the polls page.")
 

@@ -85,8 +85,8 @@ WSGI_APPLICATION = 'annivory.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'mylee_env',
+        'NAME': 'annivory_data',
+        'USER': 'postgres',
         'PASSWORD': 'admin1234',
         'HOST': 'localhost',
         'PORT': '5432',

@@ -28,6 +28,12 @@ export const CORE_CONCEPTS = [
     description:
       'React-managed data which, when changed, causes the component to re-render & the UI to update.',
   },
+  {
+    image: stateImg,
+    title: 'Problem',
+    description:
+      'React-managed data which, when changed, causes the component to re-render & the UI to update.',
+  },
 ];
 
 export const EXAMPLES = {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import { CORE_CONCEPTS, EXAMPLES } from "../data.js";
 import CoreConcept from "./CoreConcept.jsx";
 import TabButton from "./TabButton.jsx";

@@ -15,12 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path, re_path, include
 from django.views.generic import TemplateView
 from annivory_app.views import hello, SampleAPI
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/', include('annivory_app.auth_urls')),
+    path('csrf/', views.get_csrf_token),
     path('hello/', hello),
     path('api/sample/', SampleAPI.as_view()),
     re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),

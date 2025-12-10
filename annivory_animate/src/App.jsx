@@ -7,7 +7,6 @@ import MyPage from './pages/MyPage.jsx';
 import MainContent from "./components/MainContent.jsx";
 
 
-
 function App() {
   return (
     <div>
